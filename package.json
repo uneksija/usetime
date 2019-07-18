@@ -4,7 +4,8 @@
   "description": "time hook",
   "main": "src/index.js",
   "scripts": {
-    "build": "pack build"
+    "build": "pack build",
+    "version": "npm run build"
   },
   "@pika/pack": {
     "pipeline": [
