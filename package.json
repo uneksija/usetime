@@ -1,0 +1,40 @@
+{
+  "name": "@uneksija/usetime",
+  "version": "1.0.0",
+  "description": "time hook",
+  "main": "index.js",
+  "scripts": {
+    "build": "pack build"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uneksija/usetime.git"
+  },
+  "keywords": [
+    "hook",
+    "preact",
+    "react",
+    "time"
+  ],
+  "author": "uneksija",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uneksija/usetime/issues"
+  },
+  "homepage": "https://github.com/uneksija/usetime#readme",
+  "devDependencies": {
+    "@pika/pack": "^0.4.0",
+    "@pika/plugin-build-web": "^0.4.0",
+    "@pika/plugin-standard-pkg": "^0.4.0"
+  }
+}
