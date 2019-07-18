@@ -3,19 +3,9 @@
   "version": "1.1.0",
   "description": "time hook",
   "main": "src/index.js",
+  "module": "src/index.js",
   "scripts": {
-    "build": "pack build",
-    "version": "npm run build"
-  },
-  "@pika/pack": {
-    "pipeline": [
-      [
-        "@pika/plugin-standard-pkg"
-      ],
-      [
-        "@pika/plugin-build-web"
-      ]
-    ]
+    "publish": "np --no-tests --no-release-draft"
   },
   "repository": {
     "type": "git",
@@ -38,8 +28,6 @@
     "react": "^16.8.6"
   },
   "devDependencies": {
-    "@pika/pack": "^0.4.0",
-    "@pika/plugin-build-web": "^0.4.0",
-    "@pika/plugin-standard-pkg": "^0.4.0"
+    "np": "^5.0.3"
   }
 }
