@@ -2,8 +2,7 @@
   "name": "@uneksija/usetime",
   "version": "1.2.0",
   "description": "time hook",
-  "main": "src/index.js",
-  "module": "src/index.js",
+  "module": "index.js",
   "scripts": {
     "publish": "np --no-tests --no-release-draft"
   },

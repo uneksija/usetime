@@ -5,7 +5,7 @@ const hook = ({ useEffect, useRef, useState }) => () => {
   useEffect(() => {
     id.current = requestAnimationFrame(() => setTime(new Date()))
     return () => cancelAnimationFrame(id.current)
-  }, [id])
+  })
 
   return time
 }
