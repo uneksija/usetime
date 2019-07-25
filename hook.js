@@ -3,9 +3,13 @@ const hook = ({ useEffect, useRef, useState }) => () => {
   const id = useRef(null)
 
   useEffect(() => {
-    id.current = requestAnimationFrame(() => setTime(new Date()))
+    function loop() {
+      setTime(new Date())
+      id.current = requestAnimationFrame(loop)
+    }
+    loop()
     return () => cancelAnimationFrame(id.current)
-  })
+  }, [])
 
   return time
 }
